@@ -51,7 +51,7 @@ export default function Navbar() {
             href="#contact"
             className="ml-3 rounded-full bg-cobalt px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-cobalt-600"
           >
-            Hire Me
+            Get in touch
           </a>
         </div>
 
