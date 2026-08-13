@@ -1,52 +1,31 @@
-import { Mail, Phone } from "lucide-react";
+import { MailIcon, PhoneIcon } from "@/components/icons";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/BrandIcons";
 import { personal } from "@/lib/data";
 
 export default function Footer() {
+  const socialLinks = [
+    { label: "GitHub", href: personal.github, Icon: GitHubIcon },
+    { label: "LinkedIn", href: "#", Icon: LinkedInIcon },
+    { label: "X (Twitter)", href: "#", Icon: XIcon },
+    { label: "Email", href: `mailto:${personal.email}`, Icon: MailIcon },
+    { label: "Phone", href: `tel:${personal.phone.replace(/\s/g, "")}`, Icon: PhoneIcon },
+  ];
+
   return (
-    <footer className="border-t border-edge bg-white/70 backdrop-blur">
+    <footer className="border-t border-edge bg-white">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row sm:px-8">
-        <p className="text-sm text-muted-text">
-          © {new Date().getFullYear()} {personal.name}
-        </p>
+        <p className="text-sm text-muted-text">© {new Date().getFullYear()} {personal.name}</p>
         <div className="flex items-center gap-3">
-          <a
-            href={personal.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-edge bg-white text-muted-text transition-colors hover:border-cobalt hover:text-cobalt"
-          >
-            <GitHubIcon className="h-5 w-5" />
-          </a>
-          <a
-            href="#"
-            aria-label="LinkedIn"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-edge bg-white text-muted-text transition-colors hover:border-cobalt hover:text-cobalt"
-          >
-            <LinkedInIcon className="h-5 w-5" />
-          </a>
-          <a
-            href="#"
-            aria-label="X (Twitter)"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-edge bg-white text-muted-text transition-colors hover:border-cobalt hover:text-cobalt"
-          >
-            <XIcon className="h-5 w-5" />
-          </a>
-          <a
-            href={`mailto:${personal.email}`}
-            aria-label="Email"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-edge bg-white text-muted-text transition-colors hover:border-cobalt hover:text-cobalt"
-          >
-            <Mail className="h-5 w-5" />
-          </a>
-          <a
-            href={`tel:${personal.phone.replace(/\s/g, "")}`}
-            aria-label="Phone"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-edge bg-white text-muted-text transition-colors hover:border-cobalt hover:text-cobalt"
-          >
-            <Phone className="h-5 w-5" />
-          </a>
+          {socialLinks.map(({ label, href, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              aria-label={label}
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-edge text-muted-text transition-colors hover:border-cobalt hover:text-cobalt"
+            >
+              <Icon className="h-5 w-5" />
+            </a>
+          ))}
         </div>
       </div>
     </footer>
