@@ -59,10 +59,17 @@ export function ExternalLinkIcon({ className }: IconProps) {
     </svg>
   );
 }
-// export function CodeIcon({ className }: IconProps) {
-//   return (
-//   <svg  viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
-//     <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>
-//     </svg>
-//   );
-// }
+export function CodeIcon({ className }: IconProps) {
+  return (
+  <svg  viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+    <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>
+    </svg>
+  );
+}
+export function DotIcon({ className }: IconProps) {
+  return (
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+<circle cx="10" cy="12" r="1"/>
+</svg>
+  );
+}
