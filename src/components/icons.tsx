@@ -68,7 +68,7 @@ export function CodeIcon({ className }: IconProps) {
 }
 export function DotIcon({ className }: IconProps) {
   return (
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="green" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
 <circle cx="10" cy="12" r="1"/>
 </svg>
   );

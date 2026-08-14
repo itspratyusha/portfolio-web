@@ -17,6 +17,8 @@ export const personal = {
   email: "iampratsa@gmail.com",
   github: "https://github.com/itspratyusha",
   githubHandle: "github.com/itspratyusha",
+  linkedin: "https://www.linkedin.com/in/pratyusha-shrestha-911813389/",
+  linkedinHandle: "linkedin.com/in/pratyusha-shrestha-911813389/",
   resumeUrl: "/resume.pdf",
   heroIntro:
     "I build responsive, accessible web interfaces using React, Next.js, and modern CSS — turning designs into products that work beautifully on every screen.",
@@ -24,7 +26,7 @@ export const personal = {
 
 export const about = [
   "I'm a frontend developer from Kathmandu, Nepal, passionate about building clean, responsive, and user-friendly web interfaces.",
-  "I work with modern JavaScript tooling — React, Next.js, and Bootstrap — and enjoy turning designs into functional products that work well on every screen size.",
+  "I work with modern JavaScript tooling — React, Next.js, Tailwind CSS, and Bootstrap — and enjoy turning designs into functional products that work well on every screen size.",
 ];
 
 export const education = {
@@ -49,10 +51,6 @@ export const skillGroups = [
   {
     title: "Tools & Platforms",
     skills: ["Git", "GitHub", "Figma", "VS Code", "Vercel"],
-  },
-  {
-    title: "Concepts",
-    skills: ["Responsive Design", "Component-Based Architecture", "Version Control"],
   },
 ];
 

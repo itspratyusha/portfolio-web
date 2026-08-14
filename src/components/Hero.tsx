@@ -1,4 +1,4 @@
-import { ArrowRightIcon, PinIcon, ExternalLinkIcon } from "@/components/icons";
+import { ArrowRightIcon, PinIcon, ExternalLinkIcon, DotIcon } from "@/components/icons";
 import { personal } from "@/lib/data";
 
 export default function Hero() {
@@ -48,8 +48,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="order-first w-fit justify-self-center lg:order-last">
-  <div className="relative flex h-[480px] w-[360px] items-end justify-center sm:h-[220px] sm:w-[300px]">
+        <div className="order-first justify-self-center lg:order-last">
+  <div className="relative flex h-[480px] w-[360px] items-end justify-center sm:h-[240px] sm:w-[300px] ">
 
     {/* Dark green rect bg */}
     <div className="absolute left-1/2 top-1/2 h-[560px] w-[530px] -translate-x-1/2 -translate-y-1/2 bg-[#31543f] sm:h-[310px] sm:w-[300px]" />
@@ -62,7 +62,7 @@ export default function Hero() {
       <img
         src="/formal-nobg.png"
         alt="Profile"
-        className="h-auto w-[340px] object-contain sm:w-[290px]"
+        className="h-auto w-[340px] object-contain sm:w-[290px] lg:w-[600px]"
       />
     </div>
 
@@ -94,8 +94,9 @@ export default function Hero() {
     </div>
 
     {/* Role name in bottom of pic */}
-    <div className="absolute  -bottom-2 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-full border border-edge bg-white px-5 py-2 text-sm font-semibold text-foreground shadow">
-      <span className="h-2 w-2 rounded-full bg-cobalt">{personal.role}</span>
+    <div className="absolute -bottom-2 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-full border border-edge bg-white px-5 py-2 text-sm font-semibold text-foreground shadow">
+    <DotIcon className="h-4 w-5 inline-block mr-1 mb-1 animate-pulse" />
+      <span>{personal.role}</span>
     </div>
   </div>
 </div>
