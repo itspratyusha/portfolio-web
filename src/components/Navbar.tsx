@@ -16,7 +16,7 @@ export default function Navbar() {
           href="#home"
            className="absolute left-1/2 -translate-x-1/2 text-sm font-bold tracking-tight text-cobalt sm:text-base md:static md:translate-x-0 lg:text-lg"
         >
-          {personal.role}
+          Frontend Developer
         </a>
 
         {/* Desktop Navigation */}

@@ -11,7 +11,7 @@ export const personal = {
   firstName: "Pratyusha",
   lastName: "Shrestha",
   initials: "PS",
-  role: "Frontend Developer",
+  role: "Frontend Developer | React & Next.js",
   location: "Hadigaun-5, Kathmandu, Nepal",
   phone: "+977 9861798173",
   email: "iampratsa@gmail.com",
@@ -20,8 +20,9 @@ export const personal = {
   linkedin: "https://www.linkedin.com/in/pratyusha-shrestha-911813389/",
   linkedinHandle: "linkedin.com/in/pratyusha-shrestha-911813389/",
   resumeUrl: "/resume.pdf",
+  twitter:"https://x.com/Pratyushaa__",
   heroIntro:
-    "I build responsive, accessible web interfaces using React, Next.js, and modern CSS — turning designs into products that work beautifully on every screen.",
+    "I build responsive web experiences with React and Next.js, with hands-on experience in TailwindCSS and Bootstrap—where clean code meets thoughtful design.",
 };
 
 export const about = [
@@ -30,7 +31,7 @@ export const about = [
 ];
 
 export const education = {
-  degree: "B.Sc. CSIT (Bachelor of Science in Computer Science and Information Technology)",
+  degree: "Bachelor of Science in Computer Science and Information Technology",
   school: "Academia International College",
   period: "2022 — Present",
 };
@@ -59,7 +60,7 @@ export const projects = [
     title: "E-commerce Site",
     description:
       "A fully responsive e-commerce app with product listings from a public REST API, category filtering, detail pages, and a working cart with add/remove and quantity controls.",
-    tech: ["Next.js", "React.js", "Bootstrap", "REST API", "Vercel"],
+    tech: ["Next.js", "React.js", "Bootstrap", "JavaScript", "REST API", "Vercel",],
     link: "https://next-ecom-pro1.vercel.app",
   },
   {
@@ -67,14 +68,14 @@ export const projects = [
     status: "In Progress",
     description:
       "A news portal that fetches the GNews API through a Next.js API Route — keeping API keys secure server-side and deploying on Vercel.",
-    tech: ["Next.js", "React.js", "Bootstrap", "GNews API", "Vercel"],
+    tech: ["Next.js", "React.js", "Bootstrap", "JavaScript", "GNews API", "Vercel"],
     link: "https://next-news-pro2.vercel.app",
   },
   {
     title: "Responsive Website UI Collection",
     description:
       "A collection of responsive website interfaces built as practice, including Foodmandu, Savora Restaurant, Nepal Wanders, and Broadway Infosys.",
-    tech: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
+    tech: ["HTML5", "CSS3", "Bootstrap"],
     link: "https://github.com/itspratyusha",
   },
   {
@@ -83,6 +84,7 @@ export const projects = [
     description:
       "A complete mobile burger ordering app design — Home, Menu, Burger Details, Cart, and Checkout screens with modern UI principles and reusable components.",
     tech: ["Figma", "UI Design", "Prototyping"],
+    link: "https://www.figma.com/proto/r934Mx5co8EFHnCzyDonx1/Untitled?nodeid=0-1&t=il4lBOfYZjsdwDp1-1&node-id=6-61&content-scaling=responsive",
     external: true,
   },
 ];

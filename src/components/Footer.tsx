@@ -5,14 +5,14 @@ import { personal } from "@/lib/data";
 export default function Footer() {
   const socialLinks = [
     { label: "GitHub", href: personal.github, Icon: GitHubIcon },
-    { label: "LinkedIn", href: "#", Icon: LinkedInIcon },
-    { label: "X (Twitter)", href: "#", Icon: XIcon },
+    { label: "LinkedIn", href: personal.linkedin, Icon: LinkedInIcon },
+    { label: "X (Twitter)", href: personal.twitter, Icon: XIcon },
     { label: "Email", href: `mailto:${personal.email}`, Icon: MailIcon },
-    { label: "Phone", href: `tel:${personal.phone.replace(/\s/g, "")}`, Icon: PhoneIcon },
+    { label: "Phone", href: `tel:${personal.phone}`, Icon: PhoneIcon },
   ];
 
   return (
-    <footer className="border-t border-edge bg-white">
+    <footer className="bg-white border-t">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row sm:px-8">
         <p className="text-sm text-muted-text">© {new Date().getFullYear()} {personal.name}</p>
         <div className="flex items-center gap-3">
