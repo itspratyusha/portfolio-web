@@ -129,11 +129,23 @@ export default function Contact() {
             href={personal.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-semibold text-cobalt transition-colors hover:bg-gray-100"
+            className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-semibold text-black transition-colors hover:bg-gray-100"
           >
-            <ExternalLinkIcon className="h-4 w-4" />
-            View Resume
+            <motion.span
+                whileHover={{ x: 2 }}
+                transition={{ duration: 0.2 }}
+              >
+                <ExternalLinkIcon className="h-4 w-4" />
+              </motion.span>
+
+              <motion.span
+                whileHover={{ x: 2 }}
+                transition={{ duration: 0.2 }}
+              >
+                View Resume
+              </motion.span>
           </a>
+          
         </motion.div>
       </div>
     </section>

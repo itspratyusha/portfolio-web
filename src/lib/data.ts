@@ -19,7 +19,8 @@ export const personal = {
   githubHandle: "github.com/itspratyusha",
   linkedin: "https://www.linkedin.com/in/pratyusha-shrestha-911813389/",
   linkedinHandle: "linkedin.com/in/pratyusha-shrestha-911813389/",
-  resumeUrl: "/resume.pdf",
+  resumeUrl:
+  "https://www.canva.com/design/DAHQwcyqwho/aV9SVajy16aESVvPFLYFeg/view?embed",
   twitter:"https://x.com/Pratyushaa__",
   heroIntro:
     "I build responsive web experiences with React and Next.js, with hands-on experience in TailwindCSS and Bootstrap—where clean code meets thoughtful design.",

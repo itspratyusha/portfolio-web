@@ -10,15 +10,16 @@ import {
 } from "@/components/icons";
 import { personal } from "@/lib/data";
 import { motion } from "motion/react";
-import { GitHubIcon, LinkedInIcon, XIcon } from "./BrandIcons";
+import { GitHubIcon, LinkedInIcon } from "./BrandIcons";
 
 export default function Hero() {
-   const socialLinks = [
-      { label: "GitHub", href: personal.github, Icon: GitHubIcon },
-      { label: "LinkedIn", href: personal.linkedin, Icon: LinkedInIcon },
-      { label: "Email", href: `mailto:${personal.email}`, Icon: MailIcon },
-      { label: "Phone", href: `tel:${personal.phone}`, Icon: PhoneIcon },
-    ];
+  const socialLinks = [
+    { label: "GitHub", href: personal.github, Icon: GitHubIcon },
+    { label: "LinkedIn", href: personal.linkedin, Icon: LinkedInIcon },
+    { label: "Email", href: `mailto:${personal.email}`, Icon: MailIcon },
+    { label: "Phone", href: `tel:${personal.phone}`, Icon: PhoneIcon },
+  ];
+
   return (
     <section
       id="home"
@@ -99,18 +100,21 @@ export default function Hero() {
           >
             {personal.heroIntro}
           </motion.p>
-<div className="flex items-center gap-3 mt-5 ">
-          {socialLinks.map(({ label, href, Icon }) => (
-            <a
-              key={label}
-              href={href}
-              aria-label={label}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-edge text-muted-text transition-colors hover:border-cobalt hover:text-cobalt"
-            >
-              <Icon className="h-5 w-5" />
-            </a>
-          ))}
-        </div>
+
+          {/* Social Links */}
+          <div className="mt-5 flex items-center gap-3">
+            {socialLinks.map(({ label, href, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                aria-label={label}
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-edge text-muted-text transition-colors hover:border-cobalt hover:text-cobalt"
+              >
+                <Icon className="h-5 w-5" />
+              </a>
+            ))}
+          </div>
+
           {/* Buttons */}
           <motion.div
             className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
@@ -123,42 +127,60 @@ export default function Hero() {
             }}
           >
             {/* View My Work */}
-            <motion.a
+            <a
               href="#projects"
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              transition={{ duration: 0.2 }}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-cobalt px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-cobalt-600"
             >
-              View my work
-              <ArrowRightIcon className="h-4 w-4" />
-            </motion.a>
+              <motion.span
+                whileHover={{ x: 3 }}
+                transition={{ duration: 0.2 }}
+              >
+                View my work
+              </motion.span>
+
+              <motion.span
+                whileHover={{ x: 4 }}
+                transition={{ duration: 0.2 }}
+              >
+                <ArrowRightIcon className="h-4 w-4" />
+              </motion.span>
+            </a>
 
             {/* View Resume */}
-            <motion.a
+            <a
               href={personal.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              transition={{ duration: 0.2 }}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-edge px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-cobalt hover:text-cobalt"
             >
-              <ExternalLinkIcon className="h-4 w-4" />
-              View Resume
-            </motion.a>
+              <motion.span
+                whileHover={{ x: 2 }}
+                transition={{ duration: 0.2 }}
+              >
+                <ExternalLinkIcon className="h-4 w-4" />
+              </motion.span>
+
+              <motion.span
+                whileHover={{ x: 2 }}
+                transition={{ duration: 0.2 }}
+              >
+                View Resume
+              </motion.span>
+            </a>
           </motion.div>
         </motion.div>
 
         {/* image */}
-        <motion.div className="order-first justify-self-center md:order-last"
-         initial={{ opacity: 0}}
-  whileInView={{ opacity: 1 }}
-  viewport={{ once: false, amount: 0.5 }}
-  transition={{
-    duration: 0.8,
-    ease: "easeOut",
-  }}>
+        <motion.div
+          className="order-first justify-self-center md:order-last"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+          }}
+        >
           <div className="relative flex h-[400px] w-[320px] items-end justify-center sm:h-[280px] sm:w-[300px] md:h-[350px] md:w-[380px] lg:h-[380px] lg:w-[400px]">
 
             {/* Dark green rectangle background */}

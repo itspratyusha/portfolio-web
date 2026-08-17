@@ -178,7 +178,7 @@ export default function About() {
                     <div className="absolute -left-[30px] top-1 h-3 w-3 rounded-full bg-[#31543f] ring-4 ring-[#31543f]/10" />
 
                     <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#31543f]">
-                      Jan 2026 – Mar 2026
+                      Nov 2025 – Jan 2026
                     </p>
 
                     <h4 className="mt-3 text-lg font-bold leading-snug text-[#17211b] sm:text-xl">
