@@ -23,12 +23,12 @@ export const personal = {
   "https://www.canva.com/design/DAHQwcyqwho/aV9SVajy16aESVvPFLYFeg/view?embed",
   twitter:"https://x.com/Pratyushaa__",
   heroIntro:
-    "I build responsive web experiences with React and Next.js, with hands-on experience in TailwindCSS and Bootstrap—where clean code meets thoughtful design.",
+    "I build responsive web experiences with React and Next.js, with hands-on experience in TailwindCSS and Bootstrap — where clean code meets thoughtful design.",
 };
 
 export const about = [
-  "I'm a frontend developer from Kathmandu, Nepal, passionate about building clean, responsive, and user-friendly web interfaces.",
-  "I work with modern JavaScript tooling — React, Next.js, Tailwind CSS, and Bootstrap — and enjoy turning designs into functional products that work well on every screen size.",
+  "I'm a frontend developer from Kathmandu, Nepal. For me, frontend development is more than making a design look right. It's about making every interaction feel natural. ",
+  "I work with modern JavaScript tooling — React, Next.js, Tailwind CSS, & Bootstrap, bringing designs to life through responsive layouts, intuitive interactions, and thoughtful user experiences.",
 ];
 
 export const education = {
