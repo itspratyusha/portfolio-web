@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#home"
-          className="absolute left-1/2 -translate-x-1/2 text-sm font-bold tracking-tight text-cobalt sm:text-base md:static md:translate-x-0 lg:text-lg"
+          className="hidden text-sm font-bold tracking-tight text-cobalt md:block md:text-base lg:text-lg"
         >
           Frontend Developer
         </a>
@@ -63,7 +63,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#home"
-                  className="rounded-full px-5 py-2.5 text-sm font-semibold text-cobalt transition-all hover:bg-[#31543f] hover:text-white"
+                  className="whitespace-nowrap rounded-full px-3 py-2 text-xs font-semibold text-cobalt transition-all hover:bg-[#31543f] hover:text-white sm:px-4 sm:py-2.5 sm:text-sm md:px-5"
                 >
                   Home
                 </NavigationMenuLink>
@@ -73,7 +73,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#about"
-                  className="rounded-full px-5 py-2.5 text-sm font-medium text-foreground/70 transition-all hover:bg-[#31543f] hover:text-white"
+                  className="whitespace-nowrap rounded-full px-3 py-2 text-xs font-medium text-foreground/70 transition-all hover:bg-[#31543f] hover:text-white sm:px-4 sm:py-2.5 sm:text-sm md:px-5"
                 >
                   About
                 </NavigationMenuLink>
@@ -83,7 +83,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#projects"
-                  className="rounded-full px-5 py-2.5 text-sm font-medium text-foreground/70 transition-all hover:bg-[#31543f] hover:text-white"
+                  className="whitespace-nowrap rounded-full px-3 py-2 text-xs font-medium text-foreground/70 transition-all hover:bg-[#31543f] hover:text-white sm:px-4 sm:py-2.5 sm:text-sm md:px-5"
                 >
                   Projects
                 </NavigationMenuLink>
@@ -93,7 +93,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#skills"
-                  className="rounded-full px-5 py-2.5 text-sm font-medium text-foreground/70 transition-all hover:bg-[#31543f] hover:text-white"
+                  className="whitespace-nowrap rounded-full px-3 py-2 text-xs font-medium text-foreground/70 transition-all hover:bg-[#31543f] hover:text-white sm:px-4 sm:py-2.5 sm:text-sm md:px-5"
                 >
                   Skills
                 </NavigationMenuLink>
@@ -110,10 +110,10 @@ export default function Navbar() {
               </NavigationMenuItem>
 
               {/* Get in touch */}
-              <NavigationMenuItem className="ml-2">
+              <NavigationMenuItem className="ml-1 sm:ml-2">
                 <NavigationMenuLink
                   href="#contact"
-                  className="rounded-full bg-cobalt px-3 py-2 text-xs font-semibold text-white shadow-sm transition-all hover:bg-cobalt-600 hover:shadow-md lg:px-5 lg:py-2.5 lg:text-sm"
+                  className="whitespace-nowrap rounded-full bg-cobalt px-3 py-2 text-xs font-semibold text-white shadow-sm transition-all hover:bg-cobalt-600 hover:shadow-md sm:px-4 sm:py-2.5 sm:text-sm lg:px-5"
                 >
                   Get in touch
                 </NavigationMenuLink>

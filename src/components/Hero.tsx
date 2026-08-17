@@ -108,7 +108,7 @@ export default function Hero() {
                 key={label}
                 href={href}
                 target="_blank"
-  rel="noopener noreferrer"
+                rel="noopener noreferrer"
                 aria-label={label}
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-edge text-muted-text transition-colors hover:border-cobalt hover:text-cobalt"
               >
@@ -196,11 +196,11 @@ export default function Hero() {
               <img
                 src="/formal-nobg.png"
                 alt="Profile"
-                className="h-auto w-[260px] object-contain sm:w-[320px] md:w-[480px] lg:w-[390px]"
+                className="h-auto w-[260px] object-contain sm:w-[270px] md:w-[480px] lg:w-[390px]"
               />
 
               {/* HTML badge */}
-              <div className="absolute left-2 top-6 z-20 flex h-9 w-9 animate-float items-center justify-center rounded-full border border-edge bg-white shadow shadow-amber-500 sm:left-4 sm:top-15 md:left-9 md:top-20 md:h-11 md:w-11 lg:left-10 lg:top-20">
+              <div className="absolute left-5 top-8 z-20 flex h-9 w-9 animate-float items-center justify-center rounded-full border border-edge bg-white shadow shadow-amber-500 sm:left-7 sm:top-12 md:left-9 md:top-20 md:h-11 md:w-11 lg:left-10 lg:top-20">
                 <img
                   src="/tech/html5.svg"
                   alt="HTML"
@@ -209,7 +209,7 @@ export default function Hero() {
               </div>
 
               {/* CSS badge */}
-              <div className="absolute right-2 top-10 z-20 flex h-9 w-9 animate-float-slow items-center justify-center rounded-full border border-edge bg-white shadow shadow-blue-800 sm:right-2 sm:top-30 md:right-5 md:top-[40%] md:h-11 md:w-11 lg:right-5 lg:top-40">
+              <div className="absolute right-5 top-12 z-20 flex h-9 w-9 animate-float-slow items-center justify-center rounded-full border border-edge bg-white shadow shadow-blue-800 sm:right-7 sm:top-20 md:right-5 md:top-[40%] md:h-11 md:w-11 lg:right-5 lg:top-40">
                 <img
                   src="/tech/css3.svg"
                   alt="CSS"
@@ -218,7 +218,7 @@ export default function Hero() {
               </div>
 
               {/* JavaScript badge */}
-              <div className="absolute bottom-6 left-1 z-20 flex h-9 w-9 animate-float items-center justify-center rounded-full border border-edge bg-white shadow shadow-yellow-500 sm:bottom-8 sm:left-1 md:bottom-8 md:left-1 md:h-11 md:w-11 lg:bottom-10 lg:left-2">
+              <div className="absolute bottom-8 left-5 z-20 flex h-9 w-9 animate-float items-center justify-center rounded-full border border-edge bg-white shadow shadow-yellow-500 sm:bottom-8 sm:left-6 md:bottom-8 md:left-1 md:h-11 md:w-11 lg:bottom-10 lg:left-2">
                 <img
                   src="/tech/javascript.svg"
                   alt="JavaScript"

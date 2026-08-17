@@ -28,7 +28,7 @@ export const personal = {
 
 export const about = [
   "I'm a frontend developer from Kathmandu, Nepal. For me, frontend development is more than making a design look right. It's about making every interaction feel natural. ",
-  "I work with modern JavaScript tooling — React, Next.js, Tailwind CSS, & Bootstrap, bringing designs to life through responsive layouts, intuitive interactions, and thoughtful user experiences.",
+  "I work with modern JavaScript tooling — React, Next.js, Tailwind CSS & Bootstrap, bringing designs to life through responsive layouts, intuitive interactions, and thoughtful user experiences.",
 ];
 
 export const education = {
