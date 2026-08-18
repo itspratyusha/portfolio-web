@@ -112,14 +112,16 @@
 /* Global styles */
 /* Global styles */
 body {
-  font-family: var(--font-sans);
-  background: linear-gradient(
+    background: linear-gradient(
     135deg,
     #cddecf 0%,
-    #f5f7f1 40%,
-    #e3e5f3 100%
+    #f5f7f1 38%,
+    #d9def2 72%,
+    #c4cdec 100%
   );
+
   background-attachment: fixed;
+
 }
 
 html {
